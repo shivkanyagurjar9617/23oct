@@ -27,12 +27,14 @@
             }
             nav > ul{
                 padding-left: 0px;
+                
             }
              nav li{
                  list-style: none;
                  display: inline-block;
                  padding: 5px;
                  background-color: #fff;
+                 
              }
              nav li a{
                  text-decoration: none;
@@ -41,12 +43,41 @@
                  text-align: center;
                  line-height: 43px;
                  padding: 0px 10px;
+                 
              }
              nav li a:hover{
                  background-color: #2da5da;
                  color: #fff;
+                 
 
              }
+             nav > li {
+            position: relative;
+            }
+            li :hover >.submenu{
+                display: block;
+            }
+            
+           .submenu{
+                position: absolute;
+                top: 62px;
+                width: 295px;
+                height: 300px;
+                display: none;
+                background-color: #fff;
+                left: 0px;
+                border-radius: 10px;
+                border-top-left-radius: 0px;
+                padding: 0px;
+            }
+           
+            .submenu > li > a {
+            display: block;
+            padding: 25px;
+            border-bottom: 1px solid#d9d9d9;
+            color: #a6a6a6;
+            }
+             
                  
 
 
@@ -55,21 +86,35 @@
     <body>
         <header>
             <nav>
+                <ul class = "">
                 <li>
                   <a href="#" ><i class="fas fa-home"></i></a>  
                     </li>
                 <li>
-                   <a href="#"> <i class="fas fa-star"></i>About us</a> 
+                   <a href="#"> <i class="fas fa-star"></i>About us</a>
+                   <ul class = "submenu">
+                    <a href="#"> <i class="fas fa-volume-up"></i> News</a> 
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fad fa-flame"></i> mission </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-users"></i> Our team </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="far fa-trophy"></i> Rewards </a>
+                    </li>
+                    </ul>   
+                <li>
+                    <a href="#"> <i class="fas fa-bullhorn"></i> News</a>
                     </li>
                 <li>
-                    <a href="#"> <i class="fas fa-volume-up"></i>portfolio</a>
+                  <a href="#"> <i class="fas fa-briefcase"></i>portfolio</a> 
                     </li>
                 <li>
-                  <a href="#"> <i class="fas fa-briefcase"></i>About us</a> 
+                    <a href="#"> <i class="far fa-edit"></i>blog</a>
                     </li>
-                <li>
-                    <a href="#">menu</a>
-                    </li>
+                </ul>       
             </nav>
 
         </header>
