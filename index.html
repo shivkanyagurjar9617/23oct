@@ -29,14 +29,15 @@
                 padding-left: 0px;
                 
             }
-             nav li{
+             nav >ul > li{
                  list-style: none;
                  display: inline-block;
                  padding: 5px;
                  background-color: #fff;
+                 border-bottom: 1px #666;
                  
-             }
-             nav li a{
+            }
+             nav> ul > li > a{
                  text-decoration: none;
                 
                  display: block;
@@ -44,38 +45,42 @@
                  line-height: 43px;
                  padding: 0px 10px;
                  
-             }
-             nav li a:hover{
+            }
+             nav > ul >li > a:hover{
                  background-color: #2da5da;
-                 color: #fff;
-                 
-
-             }
-             nav > li {
+                 color: #fff !important;
+            }
+                 nav > ul >li > a:hover i{
+                    color: #fff !important;
+            }  
+             nav >  ul > li {
             position: relative;
             }
             li :hover >.submenu{
                 display: block;
             }
+            .menu > li:hover .submenu{
+                display: block;
+                color: #fff;
+                list-style: none;
+                
+            }
             
            .submenu{
                 position: absolute;
-                top: 62px;
-                width: 295px;
-                height: 300px;
-                display: none;
                 background-color: #fff;
-                left: 0px;
-                border-radius: 10px;
-                border-top-left-radius: 0px;
-                padding: 0px;
+                width: 230px;
+                height: 280px;
+                top: 55px;
+                left: -5px;
+                display: none; 
             }
-           
             .submenu > li > a {
             display: block;
-            padding: 25px;
+            padding: 20px;
             border-bottom: 1px solid#d9d9d9;
             color: #a6a6a6;
+            text-decoration: none;
             }
              
                  
@@ -86,30 +91,35 @@
     <body>
         <header>
             <nav>
-                <ul class = "">
+                <ul class = "menu">
                 <li>
                   <a href="#" ><i class="fas fa-home"></i></a>  
                     </li>
                 <li>
-                   <a href="#"> <i class="fas fa-star"></i>About us</a>
+                   <a href="#"> <i class="fas fa-star"></i>About us <i class="fas fa-chevron-down"></i></a>
                    <ul class = "submenu">
-                    <a href="#"> <i class="fas fa-volume-up"></i> News</a> 
-                    </li>
                     <li>
-                        <a href="#"> <i class="fad fa-flame"></i> mission </a>
+                        <a href="#"> <i class="fas fa-bullhorn"></i> news </a>
+                    </li>
+                   
+                    <li>
+                        <a href="#"> <i class="fas fa-user-circle"></i> mission </a>
                     </li>
                     <li>
                         <a href="#"> <i class="fas fa-users"></i> Our team </a>
                     </li>
                     <li>
-                        <a href="#"> <i class="far fa-trophy"></i> Rewards </a>
+                        <a href="#"> <i class="fas fa-trophy"></i> Rewards </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-certificate"></i> Certificate </a>
                     </li>
                     </ul>   
                 <li>
-                    <a href="#"> <i class="fas fa-bullhorn"></i> News</a>
+                    <a href="#"> <i class="fas fa-bullhorn"></i> News  <i class="fas fa-chevron-down"></i></a>
                     </li>
                 <li>
-                  <a href="#"> <i class="fas fa-briefcase"></i>portfolio</a> 
+                  <a href="#"> <i class="fas fa-briefcase"></i>portfolio <i class="fas fa-chevron-down"></i></a> 
                     </li>
                 <li>
                     <a href="#"> <i class="far fa-edit"></i>blog</a>
