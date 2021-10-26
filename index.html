@@ -12,6 +12,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
            
             }
             header{
@@ -21,9 +22,10 @@
             }
             header > nav{
                 width: 80%;
-                
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
                 background-color: #fff;
                 margin: 50px auto;
+                border-right: 1px solid #d3ddda;
 
             }
             nav > ul{
@@ -81,16 +83,44 @@
             color: #a6a6a6;
             text-decoration: none;
             }
-            .submenu > li:nth-child(2):hover.submenu1{
+            .submenu :hover > .submenu1{
                 display: block;
+                position: absolute;
+            }
+            .submenu1 > li > a{
+                text-decoration: none;
+                padding: 20px;
+                line-height: 50px;
+                color: #666;
+                border-bottom: 1px solid #a6a6a6;
             }
             .submenu1{
                 width: 200px;
-                height: 300px;
+                height: 260px;
                 background-color: #fff;
-                left: 270px;
+                left: 280px;
                 display: none;
+                top: 58px; 
+                
+            }
+            .arrow-left {
+                width: 0; 
+                height:0px; 
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent; 
+                border-right:8px solid #E8F5F3;
+                position: relative;
+                left: -50px;
+                top:20px;
+               background-color: red;
+            }
+            .submenu1 > li > div{
+                background-color:transparent;
+                width: 40px;
+                height: 200px;
                 position: absolute;
+                left: 40px;
+                top:0px;
             }
              
                  
@@ -109,17 +139,28 @@
                    <a href="#"> <i class="fas fa-star"></i>About us <i class="fas fa-chevron-down"></i></a>
                    <ul class = "submenu">
                     <li>
-                        <a href="#"> <i class="fas fa-bullhorn"></i> news </a>
-                    </li>
-                   
-                    <li>
                         <a href="#"> <i class="fas fa-user-circle"></i> mission </a>
-                        <ul class = "submenu submenu1">
-                            <li>
-                                <a  href="#"> <i class="fas fa-bullhorn"></i>Markus Fisher </a>
-                            </li>
-                            <li>
-                                <a  href="#"> <i class="fas fa-bullhorn"></i> Leyla Sparks </a>
+                       
+                    </li>
+                    <li>
+                     <a href="#"> <i class="fas fa-users"></i> Our team </a>
+                     <ul class = "submenu1">
+                      <li>
+                        <div>
+                            <div class="arrow-left"></div>
+                             </div> 
+                      <a  href="#"> <i class="fas fa-bullhorn"></i>Markus Fisher </a>
+                      </li>
+                        <li>
+                         <a  href="#"> <i class="fas fa-bullhorn"></i> Leyla Sparks </a>
+                         <ul class = "submenu1">
+
+                           <li>
+                            
+                            <a  href="#"> <i class="fas fa-bullhorn"></i> Leyla Sparks </a>
+                           </li>
+                            </ul>
+                                
                             </li>
                             <li>
                                 <a  href="#"> <i class="fas fa-bullhorn"></i> Gleb Ismailov </a>
@@ -128,9 +169,6 @@
                                 <a  href="#"> <i class="fas fa-bullhorn"></i>Viktoria Gibbers </a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fas fa-users"></i> Our team </a>
                     </li>
                     <li>
                         <a href="#"> <i class="fas fa-trophy"></i> Rewards </a>
